@@ -1,0 +1,17 @@
+#skills-title {
+    margin-bottom: 0px;
+    width: 90px;
+    text-align: center;
+  }
+  
+  .skills-icon {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  
+  .skills-set {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    /* margin: auto; */
+  }

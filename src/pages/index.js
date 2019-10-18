@@ -2,7 +2,9 @@ import { Link } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
+import './index-styles.css'
 import pic01 from '../assets/images/pic01.jpg'
+import reactIcon from '../assets/images/reactIcon.svg'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
@@ -26,7 +28,7 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Gatsby Starter - Stellar" />
+        <Helmet title="Kelly Nguyen" />
 
         <Header />
 
@@ -41,7 +43,7 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Ipsum sed adipiscing</h2>
+                  <h2>About Me</h2>
                 </header>
                 <p>
                   Sed lorem ipsum dolor sit amet nullam consequat feugiat
@@ -65,34 +67,131 @@ class Index extends React.Component {
 
           <section id="first" className="main special">
             <header className="major">
-              <h2>Magna veroeros</h2>
+              <h2>Technical Skills</h2>
             </header>
-            <ul className="features">
-              <li>
-                <span className="icon major style1 fa-code"></span>
-                <h3>Ipsum consequat</h3>
-                <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
-                </p>
-              </li>
-              <li>
-                <span className="icon major style3 fa-copy"></span>
-                <h3>Amed sed feugiat</h3>
-                <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
-                </p>
-              </li>
-              <li>
-                <span className="icon major style5 fa-diamond"></span>
-                <h3>Dolor nullam</h3>
-                <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
-                </p>
-              </li>
-            </ul>
+            <div className="skills-set">
+              <div className="skills-icon">
+              <h3 id="skills-title">React</h3>
+              <img
+                src={reactIcon}
+                alt="react-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+              
+              <div className="skills-icon">
+              <h3 id="skills-title">React</h3>
+              <img
+                src={reactIcon}
+                alt="react-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+              <div className="skills-icon">
+              <h3 id="skills-title">React</h3>
+              <img
+                src={reactIcon}
+                alt="react-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+              <div className="skills-icon">
+              <h3 id="skills-title">React</h3>
+              <img
+                src={reactIcon}
+                alt="react-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+              <div className="skills-icon">
+              <h3 id="skills-title">React</h3>
+              <img
+                src={reactIcon}
+                alt="react-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+              <div className="skills-icon">
+              <h3 id="skills-title">React</h3>
+              <img
+                src={reactIcon}
+                alt="react-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+              <div className="skills-icon">
+              <h3 id="skills-title">React</h3>
+              <img
+                src={reactIcon}
+                alt="react-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+              <div className="skills-icon">
+              <h3 id="skills-title">React</h3>
+              <img
+                src={reactIcon}
+                alt="react-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+              <div className="skills-icon">
+              <h3 id="skills-title">React</h3>
+              <img
+                src={reactIcon}
+                alt="react-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+              <div className="skills-icon">
+              <h3 id="skills-title">React</h3>
+              <img
+                src={reactIcon}
+                alt="react-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+            </div>
+
+        
             <footer className="major">
               <ul className="actions">
                 <li>
@@ -106,7 +205,7 @@ class Index extends React.Component {
 
           <section id="second" className="main special">
             <header className="major">
-              <h2>Ipsum consequat</h2>
+              <h2>Projects</h2>
               <p>
                 Donec imperdiet consequat consequat. Suspendisse feugiat congue
                 <br />
