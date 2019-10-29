@@ -4,8 +4,21 @@ import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
 import './index-styles.css'
 import pic01 from '../assets/images/pic01.jpg'
+// skills icon 
 import reactIcon from '../assets/images/reactIcon.svg'
+import reduxIcon from '../assets/images/reduxIcon.svg'
+import javascriptIcon from '../assets/images/javascriptIcon.svg'
+import expressIcon from '../assets/images/expressIcon.svg'
+import githubIcon from '../assets/images/githubIcon.svg'
+import nodeIcon from '../assets/images/nodeIcon.svg'
+import npmIcon from '../assets/images/npmIcon.svg'
+import cssIcon from '../assets/images/cssIcon.svg'
+import htmlIcon from '../assets/images/htmlIcon.svg'
+import sqlIcon from '../assets/images/sqlIcon.svg'
+// end skills icon 
+
 import Header from '../components/Header'
+// import Contact from '../components/Contact'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
 
@@ -38,23 +51,28 @@ class Index extends React.Component {
         ></Waypoint>
         <Nav sticky={this.state.stickyNav} />
 
+{/* ABOUT ME */}
+
         <div id="main">
           <section id="intro" className="main">
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>About Me</h2>
+                  <h2>Hi, I'm Kelly!</h2>
                 </header>
                 <p>
-                  Sed lorem ipsum dolor sit amet nullam consequat feugiat
-                  consequat magna adipiscing magna etiam amet veroeros. Lorem
-                  ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem
-                  ipsum dolor sit amet aliquam.
+                  I am a front-end developer in Austin, Texas. I am passionate about designing and building digital products/interfaces that creates an intuitive, dynamic user experience. 
+                  <br></br>
+                  <br></br>
+                  Fueled by high energy levels and boundless enthusiasm. I am easily inspired and more than willing to follow my fascinations wherever they take me. This fuels me in the pursuit of many interests, hobbies, areas of study, and artistic endeavors. 
+                  <br></br>
+                  <br></br>
+                  When I'm not coding, you can find me by the lake fishing or crabbing, hiking at a national park, taking pictures and making videos,  cooking up a new recipe, or swing dancing my heart away. 
                 </p>
                 <ul className="actions">
                   <li>
                     <Link to="/generic" className="button">
-                      Learn More
+                      Learn More About What I Do
                     </Link>
                   </li>
                 </ul>
@@ -64,6 +82,8 @@ class Index extends React.Component {
               </span>
             </div>
           </section>
+
+{/* TECHNICAL SKILLS */}
 
           <section id="first" className="main special">
             <header className="major">
@@ -82,11 +102,36 @@ class Index extends React.Component {
               />
               </div>
               
+                <div className="skills-icon">
+                <h3 id="skills-title">Redux</h3>
+                <img
+                  src={reduxIcon}
+                  alt="redux-icon"
+                  style={{
+                    width: 90,
+                    height: 90,
+                  }}
+                />
+                </div>
+
               <div className="skills-icon">
-              <h3 id="skills-title">React</h3>
+              <h3 id="skills-title">ES6+</h3>
               <img
-                src={reactIcon}
-                alt="react-icon"
+                src={javascriptIcon}
+                alt="javascript-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+
+              <div className="skills-icon">
+              <h3 id="skills-title">Express</h3>
+              <img
+                src={expressIcon}
+                alt="express-icon"
                 style={{
                   width: 90,
                   height: 90,
@@ -95,10 +140,10 @@ class Index extends React.Component {
               </div>
 
               <div className="skills-icon">
-              <h3 id="skills-title">React</h3>
+              <h3 id="skills-title">Github</h3>
               <img
-                src={reactIcon}
-                alt="react-icon"
+                src={githubIcon}
+                alt="github-icon"
                 style={{
                   width: 90,
                   height: 90,
@@ -107,10 +152,47 @@ class Index extends React.Component {
               </div>
 
               <div className="skills-icon">
-              <h3 id="skills-title">React</h3>
+              <h3 id="skills-title">Node</h3>
               <img
-                src={reactIcon}
-                alt="react-icon"
+                src={nodeIcon}
+                alt="node-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+                <div className="skills-icon">
+                <h3 id="skills-title">NPM</h3>
+                <img
+                  src={npmIcon}
+                  alt="npm-icon"
+                  style={{
+                    width: 90,
+                    height: 90,
+                  }}
+                />
+                </div>
+
+              <div className="skills-icon">
+              <h3 id="skills-title">SQL</h3>
+              <img
+                src={sqlIcon}
+                alt="sql-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+
+              <div className="skills-icon">
+              <h3 id="skills-title">CSS3</h3>
+              <img
+                src={cssIcon}
+                alt="css-icon"
                 style={{
                   width: 90,
                   height: 90,
@@ -119,70 +201,10 @@ class Index extends React.Component {
               </div>
 
               <div className="skills-icon">
-              <h3 id="skills-title">React</h3>
+              <h3 id="skills-title">HTML5</h3>
               <img
-                src={reactIcon}
-                alt="react-icon"
-                style={{
-                  width: 90,
-                  height: 90,
-                }}
-              />
-              </div>
-
-              <div className="skills-icon">
-              <h3 id="skills-title">React</h3>
-              <img
-                src={reactIcon}
-                alt="react-icon"
-                style={{
-                  width: 90,
-                  height: 90,
-                }}
-              />
-              </div>
-
-              <div className="skills-icon">
-              <h3 id="skills-title">React</h3>
-              <img
-                src={reactIcon}
-                alt="react-icon"
-                style={{
-                  width: 90,
-                  height: 90,
-                }}
-              />
-              </div>
-
-              <div className="skills-icon">
-              <h3 id="skills-title">React</h3>
-              <img
-                src={reactIcon}
-                alt="react-icon"
-                style={{
-                  width: 90,
-                  height: 90,
-                }}
-              />
-              </div>
-
-              <div className="skills-icon">
-              <h3 id="skills-title">React</h3>
-              <img
-                src={reactIcon}
-                alt="react-icon"
-                style={{
-                  width: 90,
-                  height: 90,
-                }}
-              />
-              </div>
-
-              <div className="skills-icon">
-              <h3 id="skills-title">React</h3>
-              <img
-                src={reactIcon}
-                alt="react-icon"
+                src={htmlIcon}
+                alt="html-icon"
                 style={{
                   width: 90,
                   height: 90,
@@ -202,6 +224,8 @@ class Index extends React.Component {
               </ul>
             </footer>
           </section>
+
+{/* PROJECTS */}
 
           <section id="second" className="main special">
             <header className="major">
@@ -257,6 +281,8 @@ class Index extends React.Component {
             </footer>
           </section>
 
+{/* CONTACT ME */}
+{/* <Contact/> */}
           <section id="cta" className="main special">
             <header className="major">
               <h2>Congue imperdiet</h2>
