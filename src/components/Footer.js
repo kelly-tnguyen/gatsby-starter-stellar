@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = props => (
   <footer id="footer">
-    <section>
+    {/* <section>
       <h2>Aliquam sed mauris</h2>
       <p>
         Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat
@@ -18,7 +18,7 @@ const Footer = props => (
           </Link>
         </li>
       </ul>
-    </section>
+    </section> */}
     <section>
       <h2>Etiam feugiat</h2>
       <dl className="alt">
@@ -66,7 +66,7 @@ const Footer = props => (
       </ul>
     </section>
     <p className="copyright">
-      &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+       COPYRIGHT &copy; KELLY NGUYEN 2019
     </p>
   </footer>
 )

@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
 import './index-styles.css'
 import pic01 from '../assets/images/pic01.jpg'
+
 // skills icon 
 import reactIcon from '../assets/images/reactIcon.svg'
 import reduxIcon from '../assets/images/reduxIcon.svg'
@@ -15,7 +16,13 @@ import npmIcon from '../assets/images/npmIcon.svg'
 import cssIcon from '../assets/images/cssIcon.svg'
 import htmlIcon from '../assets/images/htmlIcon.svg'
 import sqlIcon from '../assets/images/sqlIcon.svg'
-// end skills icon 
+
+// projects
+import whereToNext1 from '../assets/images/whereToNext1.png'
+import dashboard1 from '../assets/images/dashboard1.png'
+import careportal7 from '../assets/images/careportal7.png'
+import daimler1 from '../assets/images/daimler1.png'
+
 
 import Header from '../components/Header'
 // import Contact from '../components/Contact'
@@ -64,7 +71,7 @@ class Index extends React.Component {
                   I am a front-end developer in Austin, Texas. I am passionate about designing and building digital products/interfaces that creates an intuitive, dynamic user experience. 
                   <br></br>
                   <br></br>
-                  Fueled by high energy levels and boundless enthusiasm. I am easily inspired and more than willing to follow my fascinations wherever they take me. This fuels me in the pursuit of many interests, hobbies, areas of study, and artistic endeavors. 
+                  Fueled by high energy levels and boundless enthusiasm, I am easily inspired and more than willing to follow my fascinations wherever they take me. This fuels me in the pursuit of many interests, hobbies, areas of study, and artistic endeavors. 
                   <br></br>
                   <br></br>
                   When I'm not coding, you can find me by the lake fishing or crabbing, hiking at a national park, taking pictures and making videos,  cooking up a new recipe, or swing dancing my heart away. 
@@ -230,13 +237,50 @@ class Index extends React.Component {
           <section id="second" className="main special">
             <header className="major">
               <h2>Projects</h2>
-              <p>
-                Donec imperdiet consequat consequat. Suspendisse feugiat congue
-                <br />
-                posuere. Nulla massa urna, fermentum eget quam aliquet.
-              </p>
             </header>
-            <ul className="statistics">
+
+            <div>
+              <h2 id="project one"> <a href="https://github.com/kelly-tnguyen/WhereToNext">Where To Next</a></h2>
+              <img
+                src={whereToNext1}
+                style={{
+                  height: 500
+                }}
+              />
+                <p><br></br>
+                 As a nature lover and an adventurer, my goal is to visit and explore all 62 National Parks in the United States. Where To Next allows users to keep track of parks that they have been to. Users can create their own profile and search for their desired parks and add it to their next adventure list. After exploring the park, they can then check it off and add it to the archive tab.
+                </p>
+            </div>
+
+            <div>
+              <h2 id="project two"> <a href="https://github.com/kelly-tnguyen/react-redux-reducer-dashboard">Redux Dashboard</a></h2>
+              <img
+                src={dashboard1}
+                style={{
+                  height: 500
+                }}
+              />
+                <p><br></br>
+                This is a hypothetical software dashboard page. Visualization, graphs, charts, and tables are shown on the front page using React, Redux, Javascript, HTML, and CSS. Users can view details on transactions, have a statistics overview of data, a tasks panel to follow up on previous tasks, a donut chart to better visualize data at a glance, and many more. 
+                </p>
+            </div>
+
+            <div>
+              <h2 id="project three"> <a href="https://github.com/kelly-tnguyen/rocket.build-2019">CarePortal</a></h2>
+              <img
+                src={careportal7}
+                style={{
+                  height: 500
+                }}
+              />
+                <p><br></br>
+                This application serves to bolster the support of local organizations and community members who can provide to families in need by creating a catalogue of items that they can search from. We created an interface where local volunteers can donate products (e.g. beds, rugs, etc.) or services (e.g. electrical or plumbing skills) to those in need. 
+                </p>
+            </div>
+
+      
+
+            {/* <ul className="statistics">
               <li className="style1">
                 <span className="icon fa-code-fork"></span>
                 <strong>5,120</strong> Etiam
@@ -269,7 +313,7 @@ class Index extends React.Component {
               auctor iaculis porttitor. Sed ut magna ac risus et hendrerit
               scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras
               eu ornare dui curabitur lacinia.
-            </p>
+            </p> */}
             <footer className="major">
               <ul className="actions">
                 <li>
@@ -285,27 +329,31 @@ class Index extends React.Component {
 {/* <Contact/> */}
           <section id="cta" className="main special">
             <header className="major">
-              <h2>Congue imperdiet</h2>
-              <p>
-                Donec imperdiet consequat consequat. Suspendisse feugiat congue
-                <br />
-                posuere. Nulla massa urna, fermentum eget quam aliquet.
-              </p>
+              <h2>Contact</h2>
+              <form method="post" action="#">
+            <div className="field half first">
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div className="field half">
+              <label htmlFor="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div className="field">
+              <label htmlFor="message">Message</label>
+              <textarea name="message" id="message" rows="4" />
+            </div>
+            <br></br>
+            <ul className="actions">
+              <li>
+                <input type="submit" value="Send Message" className="special" />
+              </li>
+              <li>
+                <input type="reset" value="Reset" />
+              </li>
+            </ul>
+          </form>
             </header>
-            <footer className="major">
-              <ul className="actions">
-                <li>
-                  <Link to="/generic" className="button special">
-                    Get Started
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/generic" className="button">
-                    Learn More
-                  </Link>
-                </li>
-              </ul>
-            </footer>
           </section>
         </div>
       </Layout>
