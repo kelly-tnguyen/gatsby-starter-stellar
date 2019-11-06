@@ -21,11 +21,9 @@ import sqlIcon from '../assets/images/sqlIcon.svg'
 import whereToNext1 from '../assets/images/whereToNext1.png'
 import dashboard1 from '../assets/images/dashboard1.png'
 import careportal7 from '../assets/images/careportal7.png'
-import daimler1 from '../assets/images/daimler1.png'
 
-
-import Header from '../components/Header'
 // import Contact from '../components/Contact'
+import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
 
@@ -68,21 +66,21 @@ class Index extends React.Component {
                   <h2>Hi, I'm Kelly!</h2>
                 </header>
                 <p>
-                  I am a front-end developer in Austin, Texas. I am passionate about designing and building digital products/interfaces that creates an intuitive, dynamic user experience. 
+                  I am a full stack web developer who is passionate about designing, creating, and building digital webpages that creates an intuitive, dynamic user experience. I believe one of the best things about being a developer is seeing your thoughts and visions come to life. This makes me eager to keep on learning and taking on new challenges to furthur my skills.
                   <br></br>
                   <br></br>
-                  Fueled by high energy levels and boundless enthusiasm, I am easily inspired and more than willing to follow my fascinations wherever they take me. This fuels me in the pursuit of many interests, hobbies, areas of study, and artistic endeavors. 
+                  Fueled by high energy levels and boundless enthusiasm, I am easily inspired and more than willing to follow my fascinations wherever they take me. This pushes me in the pursuit of many interests, hobbies, areas of study, and artistic endeavors. 
                   <br></br>
                   <br></br>
-                  When I'm not coding, you can find me by the lake fishing or crabbing, hiking at a national park, taking pictures and making videos,  cooking up a new recipe, or swing dancing my heart away. 
+                  When I'm not coding, you can find me by the lake fishing or crabbing, hiking, taking pictures and making videos, cooking up a new recipe, or swing dancing my heart away. 
                 </p>
-                <ul className="actions">
+                {/* <ul className="actions">
                   <li>
                     <Link to="/generic" className="button">
                       Learn More About What I Do
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
               <span className="image">
                 <img src={pic01} alt="" />
@@ -222,13 +220,13 @@ class Index extends React.Component {
 
         
             <footer className="major">
-              <ul className="actions">
+              {/* <ul className="actions">
                 <li>
                   <Link to="/generic" className="button">
                     Learn More
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </footer>
           </section>
 
@@ -241,11 +239,11 @@ class Index extends React.Component {
 
             <div>
               <h2 id="project one"> <a href="https://github.com/kelly-tnguyen/WhereToNext">Where To Next</a></h2>
-              <img
+              <img id="projectPic"
                 src={whereToNext1}
-                style={{
-                  height: 500
-                }}
+                // style={{
+                //   height: 500
+                // }}
               />
                 <p><br></br>
                  As a nature lover and an adventurer, my goal is to visit and explore all 62 National Parks in the United States. Where To Next allows users to keep track of parks that they have been to. Users can create their own profile and search for their desired parks and add it to their next adventure list. After exploring the park, they can then check it off and add it to the archive tab.
@@ -254,11 +252,11 @@ class Index extends React.Component {
 
             <div>
               <h2 id="project two"> <a href="https://github.com/kelly-tnguyen/react-redux-reducer-dashboard">Redux Dashboard</a></h2>
-              <img
+              <img id="projectPic"
                 src={dashboard1}
-                style={{
-                  height: 500
-                }}
+                // style={{
+                //   height: 500
+                // }}
               />
                 <p><br></br>
                 This is a hypothetical software dashboard page. Visualization, graphs, charts, and tables are shown on the front page using React, Redux, Javascript, HTML, and CSS. Users can view details on transactions, have a statistics overview of data, a tasks panel to follow up on previous tasks, a donut chart to better visualize data at a glance, and many more. 
@@ -267,61 +265,25 @@ class Index extends React.Component {
 
             <div>
               <h2 id="project three"> <a href="https://github.com/kelly-tnguyen/rocket.build-2019">CarePortal</a></h2>
-              <img
+              <img id="projectPic mobile"
                 src={careportal7}
                 style={{
                   height: 500
                 }}
               />
                 <p><br></br>
-                This application serves to bolster the support of local organizations and community members who can provide to families in need by creating a catalogue of items that they can search from. We created an interface where local volunteers can donate products (e.g. beds, rugs, etc.) or services (e.g. electrical or plumbing skills) to those in need. 
+                This application serves to bolster the support of local organizations and community members who can provide to families in need by creating a catalogue of items that they can search from. We created a mobile application where local volunteers can donate products (e.g. beds, rugs, etc.) or services (e.g. electrical or plumbing skills) to those in need.
                 </p>
             </div>
-
-      
-
-            {/* <ul className="statistics">
-              <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
-              </li>
-              <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
-              </li>
-              <li className="style3">
-                <span className="icon fa-signal"></span>
-                <strong>2,048</strong> Tempus
-              </li>
-              <li className="style4">
-                <span className="icon fa-laptop"></span>
-                <strong>4,096</strong> Aliquam
-              </li>
-              <li className="style5">
-                <span className="icon fa-diamond"></span>
-                <strong>1,024</strong> Nullam
-              </li>
-            </ul>
-            <p className="content">
-              Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl
-              eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum
-              ac arcu sit amet, fermentum pellentesque et purus. Integer maximus
-              varius lorem, sed convallis diam accumsan sed. Etiam porttitor
-              placerat sapien, sed eleifend a enim pulvinar faucibus semper quis
-              ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer
-              eget purus nec nulla mattis et accumsan ut magna libero. Morbi
-              auctor iaculis porttitor. Sed ut magna ac risus et hendrerit
-              scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras
-              eu ornare dui curabitur lacinia.
-            </p> */}
+            
             <footer className="major">
-              <ul className="actions">
+              {/* <ul className="actions">
                 <li>
                   <Link to="/generic" className="button">
                     Learn More
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </footer>
           </section>
 

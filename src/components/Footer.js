@@ -19,40 +19,30 @@ const Footer = props => (
         </li>
       </ul>
     </section> */}
-    <section>
-      <h2>Etiam feugiat</h2>
-      <dl className="alt">
-        <dt>Address</dt>
-        <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-        <dt>Phone</dt>
-        <dd>(000) 000-0000 x 0000</dd>
-        <dt>Email</dt>
-        <dd>
-          <a href="https://codebushi.com">information@untitled.tld</a>
-        </dd>
-      </dl>
+    
+    {/* <section>
       <ul className="icons">
         <li>
           <a
-            href="https://twitter.com/huntaroSan"
+            href="https://twitter.com/kellynguyen_"
             className="icon fa-twitter alt"
           >
             <span className="label">Twitter</span>
           </a>
         </li>
         <li>
-          <a href="https://codebushi.com" className="icon fa-facebook alt">
+          <a href="https://www.facebook.com/kellynguyen617" className="icon fa-facebook alt">
             <span className="label">Facebook</span>
           </a>
         </li>
         <li>
-          <a href="https://codebushi.com" className="icon fa-instagram alt">
+          <a href="https://www.instagram.com/kelly_tnguyen/" className="icon fa-instagram alt">
             <span className="label">Instagram</span>
           </a>
         </li>
         <li>
           <a
-            href="https://github.com/codebushi/gatsby-starter-stellar"
+            href="https://github.com/kelly-tnguyen"
             className="icon fa-github alt"
           >
             <span className="label">GitHub</span>
@@ -60,11 +50,11 @@ const Footer = props => (
         </li>
         <li>
           <a href="https://codebushi.com" className="icon fa-dribbble alt">
-            <span className="label">Dribbble</span>
+            <span className="label"></span>
           </a>
         </li>
       </ul>
-    </section>
+    </section> */}
     <p className="copyright">
        COPYRIGHT &copy; KELLY NGUYEN 2019
     </p>

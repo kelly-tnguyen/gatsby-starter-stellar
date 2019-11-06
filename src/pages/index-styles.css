@@ -15,3 +15,23 @@
     flex-wrap: wrap;
     /* margin: auto; */
   }
+
+  #projectPic {
+    height: auto;;
+    width: 100%;
+  }
+
+  .field.half.first {
+    padding: 0 .75rem 0 0;
+  }
+
+  .field.half {
+    float: left;
+    padding: 0 0 0 .75rem;
+    width: 50%;
+  }
+
+  .field {
+    margin: 0 0 1.5rem;
+  }
+

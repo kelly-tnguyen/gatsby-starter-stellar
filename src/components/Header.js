@@ -6,7 +6,7 @@ const Header = (props) => (
     <header id="header" className="alt">
         <span className="logo"><img src={logo} alt="" /></span>
         <h1>Kelly Nguyen</h1>
-        <p>I design and build user interfaces</p>
+        <p>Full-Stack Web Developer | Designer</p>
     </header>
 )
 
