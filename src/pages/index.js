@@ -16,6 +16,7 @@ import npmIcon from '../assets/images/npmIcon.svg'
 import cssIcon from '../assets/images/cssIcon.svg'
 import htmlIcon from '../assets/images/htmlIcon.svg'
 import sqlIcon from '../assets/images/sqlIcon.svg'
+import mongodbIcon from '../assets/images/mongodbIcon.svg'
 
 // projects
 import whereToNext1 from '../assets/images/whereToNext1.png'
@@ -210,6 +211,18 @@ class Index extends React.Component {
               <img
                 src={htmlIcon}
                 alt="html-icon"
+                style={{
+                  width: 90,
+                  height: 90,
+                }}
+              />
+              </div>
+
+            <div className="skills-icon">
+              <h3 id="skills-title">MongoDB</h3>
+              <img
+                src={mongodbIcon}
+                alt="mongodb-icon"
                 style={{
                   width: 90,
                   height: 90,
